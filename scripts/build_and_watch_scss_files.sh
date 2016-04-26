@@ -28,7 +28,9 @@ do
   if [[ "$list" != "$last_list" ]]; then
     last_list="$list"
     for file in $files ; do
-      sassc "${sassc_args[@]}" $file ${file%.scss}.css
+      css_file="${file%.scss}.css"
+      sassc "${sassc_args[@]}" "$file" "$css_file"
+      ./node_modules/postcss-cli/bin/postcss --use autoprefixer -o "$css_file" "$css_file"
     done
     echo "*** Compiled SCSS files."
   fi
