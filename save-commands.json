@@ -1,0 +1,5 @@
+{
+  "commands": [
+    "**/*.ts : node_modules/clang-format/index.js -i -style=file {relFullPath}"
+  ]
+}

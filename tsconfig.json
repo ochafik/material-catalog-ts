@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "filesGlob": [
+    "app/**/*.ts",
+    "material2/src/components/**/*.ts",
+    "!**/*.spec.ts",
+    "!node_modules/**"
+  ],
+  "files": [
+    "app/app.component.ts",
+    "app/main.ts",
+    "material2/src/components/button/button.ts",
+    "material2/src/components/card/card.ts",
+    "material2/src/components/checkbox/checkbox.ts",
+    "material2/src/components/grid-list/grid-list.ts",
+    "material2/src/components/icon/fake-svgs.ts",
+    "material2/src/components/icon/icon-registry.ts",
+    "material2/src/components/icon/icon.ts",
+    "material2/src/components/input/input.ts",
+    "material2/src/components/list/list.ts",
+    "material2/src/components/progress-bar/progress-bar.ts",
+    "material2/src/components/progress-circle/progress-circle.ts",
+    "material2/src/components/radio/radio_dispatcher.ts",
+    "material2/src/components/radio/radio.ts",
+    "material2/src/components/sidenav/sidenav.ts",
+    "material2/src/components/toolbar/toolbar.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
