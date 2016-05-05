@@ -11,14 +11,21 @@
   },
   "filesGlob": [
     "app/**/*.ts",
+    "*.ts",
     "material2/src/components/**/*.ts",
     "!**/*.spec.ts",
     "!node_modules/**"
   ],
   "files": [
     "app/app.component.ts",
-    "app/button.demo.ts",
+    "app/button-demo.ts",
+    "app/checkbox-demo.ts",
+    "app/demo-app.ts",
+    "app/dynamic.ts",
+    "app/home.ts",
+    "app/icon-demo.ts",
     "app/main.ts",
+    "app/progress-bar-demo.ts",
     "material2/src/components/button/button.ts",
     "material2/src/components/card/card.ts",
     "material2/src/components/checkbox/checkbox.ts",

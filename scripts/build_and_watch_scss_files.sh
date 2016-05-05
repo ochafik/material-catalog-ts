@@ -6,6 +6,7 @@ set -u
 
 readonly sassc_args=(
   -m
+  -I material2/src
   -I material2/src/core/style
 )
 

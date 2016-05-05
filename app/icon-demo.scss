@@ -1,0 +1,19 @@
+@import 'flex';
+
+$mat-grid: 8px;
+
+.icon-container {
+  width:  14 * $mat-grid;
+  height: 10 * $mat-grid;
+  @include display-inline-flex();
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.icon-container {
+  font-size: 10px;
+}
+
+.icon-title {
+  padding-top: 16px;
+}

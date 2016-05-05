@@ -1,0 +1,59 @@
+@mixin display-flex() {
+  display: -webkit-flex;
+  display: flex;         // Spec
+}
+
+@mixin display-inline-flex() {
+  display: -webkit-inline-flex;
+  display: inline-flex;         // Spec
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin align-items($direction) {
+  -webkit-align-items: $direction;
+  align-items: $direction;
+}
+
+@mixin align-self($direction) {
+  -webkit-align-self: $direction;
+  align-self: $direction;
+}
+
+@mixin align-content($direction) {
+  -webkit-align-content: $direction;
+  align-content: $direction;
+}
+
+@mixin justify-content($direction) {
+  -webkit-justify-content: $direction;
+  justify-content: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-basis($amount) {
+  -webkit-flex-basis: $amount;
+  flex-basis: $amount;
+}
+
+@mixin flex-grow($amount) {
+  -webkit-flex-grow: $amount;
+  flex-grow: $amount;
+}
+
+@mixin flex-shrink($amount) {
+  -webkit-flex-shrink: $amount;
+  flex-shrink: $amount;
+}
+
+@mixin flex($values...) {
+  -webkit-flex: $values;
+  flex: $values;
+}

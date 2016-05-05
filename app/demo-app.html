@@ -1,0 +1,34 @@
+<md-sidenav-layout class="demo-root" fullscreen>
+  <md-sidenav #start>
+    <md-nav-list>
+      <a md-list-item [routerLink]="['Home']">Home</a>
+      <a md-list-item [routerLink]="['ButtonDemo']">Button</a>
+      <a md-list-item [routerLink]="['CheckboxDemo']">Checkbox</a>
+      <a md-list-item [routerLink]="['IconDemo']">Icon</a>
+      <a md-list-item [routerLink]="['ProgressBarDemo']">Progress Bar</a>
+    </md-nav-list>
+    <button md-button (click)="start.close()">CLOSE</button>
+  </md-sidenav>
+
+  <div>
+    <md-toolbar color="primary">
+      <md-icon (click)="start.open()">menu</md-icon>
+      <div class="demo-toolbar">
+        <h1>Angular Material 2 Demos</h1>
+        <button md-button (click)="root.dir = (root.dir == 'rtl' ? 'ltr' : 'rtl')" title="Toggle between RTL and LTR">
+          {{root.dir.toUpperCase()}}
+        </button>
+      </div>
+
+      <md-toolbar-row>
+        <button md-button [routerLink]="['Home']">Components</button>
+        <button md-button>About</button>
+      </md-toolbar-row>
+
+    </md-toolbar>
+
+    <div #root="$implicit" dir="ltr" class="demo-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</md-sidenav-layout>

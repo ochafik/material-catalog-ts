@@ -14,8 +14,8 @@ import {MdButton} from '../material2/src/components/button/button';
     <button md-raised-button class="raised">Explore</button>
 
     <h3>Disabled</h3>
-    <button disabled md-button disabled="">Share</button>
-    <button disabled md-raised-button disabled="" class="raised">Explore</button>
+    <button disabled md-button>Share</button>
+    <button disabled md-raised-button class="raised">Explore</button>
 
     <h3>Custom colors</h3>
     <button md-raised-button color="warn" class="raised">Share</button>
