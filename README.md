@@ -20,3 +20,8 @@ The app will refresh after any `*.ts` or `*.scss` edit:
 ```
 npm start
 ```
+
+## Links
+
+- [angular2-template-compiler](https://www.npmjs.com/package/angular2-template-compiler)
+- [angular material2](https://github.com/angular/material2)

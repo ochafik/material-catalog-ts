@@ -24,9 +24,10 @@
     "clang-format": "^1.0.32",
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
-    "postcss-cli": "^2.5.2",
     "tslint": "^3.7.0-dev.2",
     "typescript": "^1.8.10",
+    "postcss-cli": "^2.5.2",
+    "tsickle": "^0.1.2",
     "typings": "^0.8.1"
   }
 }
