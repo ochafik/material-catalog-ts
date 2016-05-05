@@ -5,9 +5,9 @@ import {MdIcon} from '../material2/src/components/icon/icon';
   selector: 'icon-demo',
   directives: [MdIcon],
   template: `
-    <div *ngFor="var category of categories">
+    <div *ngFor="let category of categories">
       <h1>{{category}}</h1>
-      <div *ngFor="var icon of getIcons(category)"
+      <div *ngFor="let icon of getIcons(category)"
            class="icon-container">
         <md-icon>{{icon}}</md-icon>
         <span class='icon-title'>{{icon}}</span>
@@ -17,11 +17,11 @@ import {MdIcon} from '../material2/src/components/icon/icon';
   styleUrls: ['app/icon-demo.css']
 })
 export class IconDemo {
-  get categories() { return Object.keys(data); }
-  getIcons(category: string) { return data[category]; }
+  get categories(): string[] { return Object.keys(data); }
+  getIcons(category: string): string[] { return data[category]; }
 }
 
-let data = {
+let data: {[category: string]: string[]} = {
   'Actions': [
     'threeDRotation',
     'accessibility',

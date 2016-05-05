@@ -21,5 +21,5 @@ export class CheckboxDemo {
   checked = true;
   disabled = true;
 
-  handleCheckbox(value) { console.log(`Value: ${value}`); }
+  handleCheckbox(value: Event) { console.log(`Value: ${value}`); }
 }
